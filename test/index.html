@@ -3,13 +3,235 @@
 <head>
 <title>Page Title</title>
 </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Workshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #FF6600; /* Harley orange */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #000000; /* Black */
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF6600;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .services ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #FF6600; /* Harley orange */
+        }
+
+        .gallery h2 {
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
 <body>
 
-<h1 style="font-family:monospace;>Her skjer det spennende ting!</h1>
-<p>Klikk her for nyhetsbrev.</p>
+    <!-- Header -->
+    <header>
+        <h1>XYZ Motorcycle Workshop</h1>
+        <p>Your trusted motorcycle repair and maintenance partner</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to XYZ Motorcycle Workshop! We specialize in high-quality motorcycle repairs, maintenance, and customization. Our team of experienced mechanics is passionate about bikes and dedicated to providing the best service possible to keep you on the road.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <h3>Repairs</h3>
+                    <p>Fast and reliable motorcycle repairs for all makes and models.</p>
+                </li>
+                <li>
+                    <h3>Maintenance</h3>
+                    <p>Comprehensive maintenance to keep your bike running smoothly.</p>
+                </li>
+                <li>
+                    <h3>Custom Builds</h3>
+                    <p>Create a unique motorcycle tailored to your style and preferences.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <h2>Our Work</h2>
+            <div>
+                <img src="https://via.placeholder.com/800x400?text=Motorcycle+Repair+1" alt="Motorcycle Repair 1">
+                <img src="https://via.placeholder.com/800x400?text=Motorcycle+Repair+2" alt="Motorcycle Repair 2">
+                <img src="https://via.placeholder.com/800x400?text=Motorcycle+Repair+3" alt="Motorcycle Repair 3">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Visit us or reach out for a consultation:</p>
+            <p><strong>Address:</strong> 123 Motorcycle St, Bike City, 98765</p>
+            <p><strong>Email:</strong> contact@xyzmotorcycleworkshop.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 XYZ Motorcycle Workshop. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
-
-
 
